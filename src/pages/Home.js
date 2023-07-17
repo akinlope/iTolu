@@ -3,7 +3,7 @@ import { slideIn, slideInBtn } from "../Motion";
 
 const Home = () => {
     return (
-        <div className=" lg:h-screen  w-4/5 mx-auto sm:overflow-hidden">
+        <div className=" lg:h-screen sm:h-screen md:h-screen  w-4/5 mx-auto">
             <div className=" pt-40 p-5">
                 <motion.p variants={slideIn} animate="animate" initial="initial"
                     className=" text-brightTxt text-2xl sm:text-lg font-bold">Hello, my name is</motion.p>
