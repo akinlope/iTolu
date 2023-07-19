@@ -95,3 +95,48 @@ export const technologies = {
         y: 0
     }
 }
+
+export const fadeIn = (props) => {
+    return {
+      initial: {
+        opacity: 0,
+        x: props === "left" ? -50 : 50,
+      },
+      animate: (custom) => ({
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: custom * 0.5,
+          ease: "easeInOut",
+        },
+      }),
+    };
+}
+
+export const slideIns = {
+    initial: {
+      opacity: 0,
+      x: 50,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+      },
+    },
+};
+
+export const socialMadre = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        staggerDirection: -1,
+      },
+    },
+};

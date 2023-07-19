@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 
 
 
@@ -36,8 +37,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App w-screen bg-bgBlack ">
-      <RouterProvider router={router}/>      
+    <div className="App w-screen bg-bgBlack relative ">
+      
+      <RouterProvider router={router}/>  
+      <Footer />    
     </div>
   );
 }

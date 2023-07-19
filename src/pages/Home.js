@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { slideIn, slideInBtn } from "../Motion";
-
+import resume from "../data/myCV.pdf"
 const Home = () => {
     return (
         <div className=" lg:h-screen sm:h-screen md:h-screen  w-4/5 mx-auto">
@@ -15,10 +15,10 @@ const Home = () => {
                     className=" text-mainTxt text-2xl sm:text-lg font-bold mt-4 ">I'm a frontend developer who specializes in building exceptional digital experience.</motion.p>
 
                 <motion.div variants={slideInBtn} animate="animate" initial="initial"
-                     className=" mt-10 lg:flex lg:pr-48 sm:flex-col">
-                    {/* <a href=""> */}
+                     className=" mt-10 lg:flex lg:pr-48 sm:flex-col justify-around">
+                    <a href={resume} download={"My Resume"}>
                         <button className=" sm:px-[8px] sm:py-[5px] md:px-[13px] md:py-[10px] lg:py-[17px] lg:px-[60px] btn rounded-[5px] md:text-sm sm:mb-5 md:mb-5"><span>View Résumé</span></button>
-                    {/* </a> */}
+                    </a>
                     <a href="https://github.com/akinlope" target="_blank" rel="noreferrer">
                         <button className=" sm:px-[8px] sm:py-[5px] md:px-[13px] md:py-[10px] lg:py-[17px] lg:px-[60px] btn rounded-[5px]"><span>View GitHub</span></button>
                     </a>
