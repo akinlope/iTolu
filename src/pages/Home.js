@@ -6,9 +6,9 @@ const Home = () => {
         <div className=" lg:h-screen sm:h-screen md:h-screen  w-4/5 mx-auto">
             <div className=" pt-40 p-5">
                 <motion.p variants={slideIn} animate="animate" initial="initial"
-                    className=" text-brightTxt text-2xl sm:text-lg font-bold">Hello, my name is</motion.p>
+                    className=" text-mainTxt text-2xl sm:text-lg font-bold">Hello, my name is</motion.p>
                 <motion.p variants={slideIn} animate="animate" initial="initial"
-                    className=" font-Stretch text-mainTxt text-7xl md:text-5xl sm:text-2xl mt-4 font-extrabold ">TOOLULOPE</motion.p>
+                    className=" font-Stretch text-brightTxt text-7xl md:text-5xl sm:text-2xl mt-4 font-extrabold">TOOLULOPE</motion.p>
                 <motion.p variants={slideIn} animate="animate" initial="initial"
                      className=" text-mainTxt text-7xl md:text-5xl sm:text-2xl mt-4 font-extrabold">I build stunning websites.</motion.p>
                 <motion.p variants={slideIn} animate="animate" initial="initial"

@@ -3,6 +3,7 @@ import bueno from "./image/Bueno.png"
 import portfolio from "./image/Portfolio.png"
 import todo from "./image/Todo.png"
 import budget from "./image/budget.png"
+import { toast } from "react-toastify"
 
 export const videoArr = [
     {
@@ -48,4 +49,11 @@ export const videoArr = [
     
 ];
 
+// Toast 
+export const toastErr = (str) => {
+    return toast.error(str)
+};
+export const toastSuc = (str) => {
+    return toast.success(str)
+}
 

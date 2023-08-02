@@ -28,6 +28,7 @@ const Footer = () => {
             icon: <BsGithub />
         }
     ];
+
     const classes =
     "text-md md:text-xl text-secondary rounded-full bg-white block relative w-9 h-9 flex items-center justify-center duration-150";
 
@@ -37,7 +38,7 @@ const Footer = () => {
         initial="initial"
         animate="animate"
         custom={1.5}
-        className="fixed z-50 bottom-8 right-3 md:right-12 flex flex-col items-center justify-center  "
+        className="fixed z-50 bottom-8 right-3 md:right-12 flex flex-col items-center justify-center "
       >
         <AnimatePresence>
           {show && (
@@ -66,22 +67,21 @@ const Footer = () => {
           {show ? (
             <motion.div
               animate={show ? { rotate: 360 } : { rotate: 0 }}
-              className="cursor-pointer rounded-full bg-[#66fcf1]"
+              className="cursor-pointer rounded-full bg-[#66fcf1] w-10 h-10 flex justify-center items-center mt-10"
               onClick={handleClick}
             >
               <AiOutlineMinus />
             </motion.div>
           ) : (
-            <motion.div
+            <motion.div 
               animate={show ? { rotate: 180 } : { rotate: 0 }}
-              className="cursor-pointer rounded-full bg-[#66fcf1]"
+              className="cursor-pointer rounded-full bg-[#66fcf1] w-10 h-10 flex justify-center items-center"
               onClick={handleClick}
             >
               <AiOutlinePlus />
             </motion.div>
           )}
         </div>
-        {/* <div className="w-0.5 bg-lightGrey opacity-60 h-28 hidden md:block"></div> */}
       </motion.div>
     )
 }

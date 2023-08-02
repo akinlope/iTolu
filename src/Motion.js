@@ -37,7 +37,7 @@ export const slideInContact = {
         rotate: 0,
         transition: {
             type: "spring",
-            stiffness: 500
+            stiffness: 300
             
         }
     },

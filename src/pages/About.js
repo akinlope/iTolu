@@ -56,9 +56,6 @@ const About = () => {
                                     <p>Chat me</p>
                                 </div>
                             </a>
-                            {/* <div>
-
-                            </div> */}
                         </div>
                     </div>
                 </motion.div>
