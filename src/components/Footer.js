@@ -38,7 +38,7 @@ const Footer = () => {
         initial="initial"
         animate="animate"
         custom={1.5}
-        className="fixed z-50 bottom-8 right-3 md:right-12 flex flex-col items-center justify-center "
+        className="fixed z-50 bottom-8 right-3 md:right-12 flex flex-col items-center justify-center mr-10"
       >
         <AnimatePresence>
           {show && (
