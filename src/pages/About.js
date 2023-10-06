@@ -23,7 +23,7 @@ const About = () => {
                     className="lg:flex lg:w-1/2 bg-slate-200 rounded-md p-2 ">
                     {/* img */}
                     <div className="flex justify-center lg:w-1/2 p-4 ">
-                        <img className=" rounded-lg sha " src={man} alt="" />
+                        <img className=" rounded-lg shadow-2xl " src={man} alt="" />
                     </div>
                     {/* write up */}
                     <div className=" lg:w-2/3">
