@@ -90,3 +90,8 @@ body{
 }
 
 /* GitHub */
+
+
+.sha {
+  box-shadow: 15px 11px 0px -4px rgba(0,0,0,0.1);
+}

@@ -18,12 +18,12 @@ const About = () => {
 
 
             <div className=" mt-2 flex justify-between sm:flex-col sm:justify-center md:flex-col md:justify-center sm:ml-5 sm:mr-5 md:ml-5 md:mr-5 ">
-                {/* owner's progile */}
+                {/* owner's profile */}
                 <motion.div variants={profileSlideIn} animate="animate" initial="initial"
-                    className="lg:flex lg:w-1/2 bg-slate-200 rounded-md p-2 pb-10 ">
+                    className="lg:flex lg:w-1/2 bg-slate-200 rounded-md p-2 ">
                     {/* img */}
-                    <div className="flex justify-center lg:w-1/2">
-                        <img className=" rounded-md " src={man} alt="" />
+                    <div className="flex justify-center lg:w-1/2 p-4 ">
+                        <img className=" rounded-lg sha " src={man} alt="" />
                     </div>
                     {/* write up */}
                     <div className=" lg:w-2/3">
